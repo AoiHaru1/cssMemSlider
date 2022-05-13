@@ -23,7 +23,6 @@ h1 {
   padding: 0 2em;
   overflow: hidden;
   margin: 0 auto;
-  margin-top: 6rem;
   display: flex;
   border: 1px solid red;
   flex-direction: column;
@@ -32,26 +31,49 @@ h1 {
   background-color: rgb(0, 120, 233);
 }
 
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
 .images {
-  width: 700%;
+  width: 500%;
+  height: 100%;
   display: flex;
   gap: 3em;
   align-items: center;
   border: 1px solid green;
   border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
 img {
-  width: calc(100% / 7);
+  width: calc(100% / 5);
   border-radius: 5%;
 }
 
 .text-container {
-  width: 700%;
+  width: 500%;
   display: flex;
   gap: 3em;
 }
 
 .text {
-  width: calc(100% / 7);
+  width: calc(500% / 7);
+}
+
+input:nth-of-type(1):checked ~ .images{
+  margin-left: 0%;
+}
+
+input:nth-of-type(2):checked ~ .images{
+  margin-left: -109%;
+}
+
+input:nth-of-type(3):checked ~ .images{
+  margin-left: -218%;
+}
+
+input:nth-of-type(4):checked ~ .images{
+  margin-left: -327%;
 }
