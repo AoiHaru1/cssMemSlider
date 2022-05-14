@@ -12,23 +12,42 @@
 <body>
   <div class="container">
     <div class="wrapper">
-      <h1 class="title">CSS Mem Slider</h1>
       <div class="mem-container">
-        <input checked type="radio" name="option">
-        <input type="radio" name="option">
-        <input type="radio" name="option">
-        <input type="radio" name="option">
-        <div class="images">
-          <img src="./assets/images/1.jpg" alt="1">
-          <img src="./assets/images/2.jpg" alt="2">
-          <img src="./assets/images/3.jpg" alt="3">
-          <img src="./assets/images/4.jpg" alt="4">
+        <input class="btn-input" checked type="radio" name="option" id="btn1">
+        <input class="btn-input" type="radio" name="option" id="btn2">
+        <input class="btn-input" type="radio" name="option" id="btn3">
+        <input class="btn-input" type="radio" name="option" id="btn4">
+        <div class="img-wrapper">
+          <div class="images">
+            <img class="image" src="./assets/images/1.jpg" alt="1">
+            <img class="image" src="./assets/images/2.jpg" alt="2">
+            <img class="image" src="./assets/images/3.jpg" alt="3">
+            <img class="image" src="./assets/images/4.jpg" alt="4">
+          </div>
         </div>
-        <div class="text-container">
-          <span class="text">Test</span>
-          <span class="text">Test1</span>
-          <span class="text">Test2</span>
-          <span class="text">Test3</span>
+        <div class="content">
+          <div class="text-wrapper">
+            <div class="text-container">
+              <span class="text">Developer on duty</span>
+              <span class="text">What does the dog say</span>
+              <span class="text">The real hassle</span>
+              <span class="text">Blub Blub</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <label class="button" for="btn1">
+              <div class="bullet"></div>
+            </label>
+            <label class="button" for="btn2">
+              <div class="bullet"></div>
+            </label>
+            <label class="button" for="btn3">
+              <div class="bullet"></div>
+            </label>
+            <label class="button" for="btn4">
+              <div class="bullet"></div>
+            </label>
+          </div>
         </div>
       </div>
     </div>
