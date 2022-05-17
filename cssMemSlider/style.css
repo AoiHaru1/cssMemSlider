@@ -10,10 +10,22 @@ body {
   background-attachment: fixed;
 }
 
+.sorry {
+  display: block;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sorry a {
+  color: pink;
+}
+
 .mem-container {
   max-width: 35em;
   padding: 1em 1em;
-  margin: 7rem auto 0 auto;
+  margin: 3rem auto 0 auto;
   border-radius: 5%;
   background-color: rgba(0, 120, 233, 0.27);
 }
@@ -110,6 +122,14 @@ input:nth-of-type(4):checked~.content .text-container {
 }
 
 @media(max-width: 485px) {
+  .sorry {
+    display: none;
+  }
+
+  .mem-container { 
+    margin-top: 7rem;
+  }
+
   .content {
     flex-direction: column-reverse;
   }
